@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Result Management System</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            background: url('https://images.unsplash.com/photo-1580582932707-520aed937b7b') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(12px);
+            padding: 50px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+            width: 350px;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 30px;
+            font-size: 26px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            margin: 12px 0;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            color: white;
+        }
+
+        .student {
+            background: linear-gradient(45deg, #00c6ff, #0072ff);
+        }
+
+        .teacher {
+            background: linear-gradient(45deg, #f7971e, #ffd200);
+        }
+
+        .admin {
+            background: linear-gradient(45deg, #ff416c, #ff4b2b);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        footer {
+            margin-top: 20px;
+            color: #eee;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Student Result Management System</h1>
+
+        <button class="btn student" onclick="location.href='student_login.html'">
+            Student Login
+        </button>
+
+        <button class="btn teacher" onclick="location.href='teacher_login.html'">
+            Teacher Login
+        </button>
+
+        <button class="btn admin" onclick="location.href='admin_login.html'">
+            Admin Login
+        </button>
+
+        <footer>
+            © 2026 College System
+        </footer>
+    </div>
+
+</body>
+</html>
